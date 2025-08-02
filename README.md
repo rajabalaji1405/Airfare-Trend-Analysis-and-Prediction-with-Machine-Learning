@@ -1,5 +1,5 @@
 ✈️Airfare-Trend-Analysis-and-Prediction-with-Machine-Learning
-#This project aims to analyze airfare trends and predict flight ticket prices using machine learning. It includes end-to-end modules from data collection to web-based prediction, built with Python and ML frameworks, and optionally deployed using Streamlit for user interaction.
+.This project aims to analyze airfare trends and predict flight ticket prices using machine learning. It includes end-to-end modules from data collection to web-based prediction, built with Python and ML frameworks, and optionally deployed using Streamlit for user interaction.
 🔧 Tech Stack
 🖥️ Frontend
 #Streamlit (optional / for future enhancement) – For interactive and user-friendly web interface

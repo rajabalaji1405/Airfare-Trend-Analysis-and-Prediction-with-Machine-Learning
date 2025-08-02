@@ -1,93 +1,104 @@
 ✈️ Airfare Trend Analysis and Prediction with Machine Learning
-This project aims to analyze airfare trends and predict flight ticket prices using machine learning. It includes end-to-end modules from data collection to web-based prediction, built with Python and ML frameworks, and optionally deployed using Streamlit for user interaction.
+📊 A powerful machine learning project to analyze trends in flight ticket pricing and provide accurate price predictions based on historical data. This system supports exploratory data analysis, feature engineering, multiple machine learning models, and optionally a user-friendly web interface using Streamlit.
 
-🔧 Tech Stack
-🖥️ Frontend
-Streamlit (optional / for future enhancement) – For interactive and user-friendly web interface
+🔍 Features
+✅ Imports flight datasets (CSV / future: API)
+✅ Cleans and transforms raw data for modeling
+✅ Performs feature engineering for improved accuracy
+✅ Trains multiple ML models (Linear, Random Forest, XGBoost, etc.)
+✅ Accepts user input and predicts future flight fares
+✅ (Optional) Streamlit interface for user interaction and price display
+✅ Visualization of price trends and model performance
 
-⚙️ Backend
-Python 3.0+
+🧱 Tech Stack
+✅Backend: Flask (Python 3.x)
 
-Flask Framework
+✅Frontend: Streamlit (optional enhancement)
 
-🧠 Libraries & Tools
-Pandas, NumPy, Matplotlib, Seaborn – Data processing & visualization
+✅IDE: VS Code / PyCharm / Jupyter Notebook
 
-Scikit-learn, XGBoost, Keras, Scipy – Machine learning & deep learning
+✅Data Format: CSV files (API support planned)
 
-IDE: VS Code / PyCharm / Jupyter Notebook
+✅Machine Learning: Scikit-learn, XGBoost, Keras
 
-📦 Project Modules
+✅Visualization: Matplotlib, Seaborn
+
+✅Libraries Used:pandas, numpy, scikit-learn, xgboost, keras, matplotlib, seaborn, scipy
+
+🧩 Project Modules
 1. 📥 Data Collection Module
-Imports raw flight datasets from CSV files
 
-(Future Enhancement: Support for API-based data fetching)
+Loads raw flight data from CSV files
+
+Future enhancement: Integrate real-time API-based data fetching
 
 2. 🧹 Data Processing Module
-Cleans the dataset
 
-Handles missing/null values
+Cleans dataset by:
 
-Applies necessary data type conversions and transformations
+Handling missing/null values
 
-3. 🛠️ Feature Engineering Module
-Extracts meaningful features:
+Encoding categorical variables
 
-Journey Day/Month
+Converting duration/time fields
 
-Duration (in minutes)
+Normalizing or scaling numeric fields (if required)
 
-Airline, Source, Destination, etc.
+3. 🛠 Feature Engineering Module
+
+Extracts useful features like:
+
+Day of journey
+
+Month of journey
+
+Total stops
+
+Flight duration in minutes
+
+Airline, Source, Destination (one-hot encoded)
 
 4. 🤖 Model Training Module
-Splits data into training/testing sets
 
-Trains multiple ML models (Linear Regression, Random Forest, XGBoost, etc.)
+Splits data into training/test sets
 
-Hyperparameter tuning and evaluation
+Trains and compares:
 
-5. 💡 Prediction Module
-Accepts user input (flight details)
+Linear Regression
 
-Returns predicted airfare price
+Decision Tree Regressor
 
-6. 🌐 Web Interface Module (Optional/Future Enhancement)
-Provides a web interface for:
+Random Forest Regressor
 
-Inputting flight details
+XGBoost Regressor
 
-Displaying predicted fare results
+Neural Network (via Keras)
 
-Visualizing trend charts
+Hyperparameter tuning and model evaluation using:
 
-🚀 How to Run the Project
-Install required libraries:
+RMSE, MAE, R² score
 
-bash
-pip install pandas numpy matplotlib seaborn scikit-learn xgboost keras scipy streamlit flask
-🏃 Running the Project
-Option 1: Jupyter Notebook
+K-Fold Cross-validation
 
-bash
-jupyter notebook
-Option 2: Streamlit Web App (if implemented)
+5. 🔮 Prediction Module
 
-bash
-streamlit run app.py
-Option 3: Flask Backend
+Accepts user inputs (airline, source, destination, date, stops, etc.)
 
-bash
-python app.py
-📊 Example Outputs
-📈 Airfare trend visualizations
+Outputs predicted airfare using the best trained model
 
-💰 Flight price prediction for custom inputs
+6. 🌐 Web Interface Module (Optional)
 
-🧠 Future Enhancements
-Live API data fetching
+Built using Streamlit
 
-Integration with real-time airfare sources
+🛠️ Future Enhancements
+Real-time airfare API integration
 
-Improved deep learning models
+Deep learning models using LSTM for time-series
 
-Enhanced UI/UX using Streamlit
+Enhanced web UI
+
+Airline-wise trend analysis
+
+Allows users to enter details and view predicted prices instantly
+
+Supports trend visualizations

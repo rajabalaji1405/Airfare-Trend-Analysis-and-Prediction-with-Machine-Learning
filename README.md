@@ -3,11 +3,17 @@
 
 🔍 Features
 ✅ Imports flight datasets (CSV / future: API)
+
 ✅ Cleans and transforms raw data for modeling
+
 ✅ Performs feature engineering for improved accuracy
+
 ✅ Trains multiple ML models (Linear, Random Forest, XGBoost, etc.)
+
 ✅ Accepts user input and predicts future flight fares
+
 ✅ (Optional) Streamlit interface for user interaction and price display
+
 ✅ Visualization of price trends and model performance
 
 🧱 Tech Stack

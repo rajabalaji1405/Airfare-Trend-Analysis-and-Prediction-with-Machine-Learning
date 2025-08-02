@@ -1,7 +1,9 @@
 ✈️ Airfare Trend Analysis and Prediction with Machine Learning
+
 📊 A powerful machine learning project to analyze trends in flight ticket pricing and provide accurate price predictions based on historical data. This system supports exploratory data analysis, feature engineering, multiple machine learning models, and optionally a user-friendly web interface using Streamlit.
 
 🔍 Features
+
 ✅ Imports flight datasets (CSV / future: API)
 
 ✅ Cleans and transforms raw data for modeling
@@ -17,6 +19,7 @@
 ✅ Visualization of price trends and model performance
 
 🧱 Tech Stack
+
 ✅Backend: Flask (Python 3.x)
 
 ✅Frontend: Streamlit (optional enhancement)
@@ -32,6 +35,7 @@
 ✅Libraries Used:pandas, numpy, scikit-learn, xgboost, keras, matplotlib, seaborn, scipy
 
 🧩 Project Modules
+
 1. 📥 Data Collection Module
 
 Loads raw flight data from CSV files
@@ -97,6 +101,7 @@ Outputs predicted airfare using the best trained model
 Built using Streamlit
 
 🛠️ Future Enhancements
+
 Real-time airfare API integration
 
 Deep learning models using LSTM for time-series
